@@ -1,0 +1,20 @@
+# Authors
+
+Miftah Ahmad Choiri:
+  name             : Miftah Ahmad Choiri
+  avatar           : "/assets/profiles/myprofile3.png"
+  bio              : "Investing in **learning** is the most valuable **investment**—its returns last a lifetime and create endless **opportunities**.🚀"
+  location         : "Jakarta, ID"
+  links:
+    - label: "Resume/CV"
+      icon: "fas fa-fw fa-link"
+      url: "https://miftah.cloud/about/"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/miftah-ahmad-choiri-a8a953120/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/miftah-ahmad-choiri"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://www.instagram.com/miftah_ahmad_choiri/"

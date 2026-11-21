@@ -1,0 +1,36 @@
+.page__lead {
+    background-color: #5e616c; /* Same as overlay_color */
+    color: white; /* Ensure text is readable */
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.splash .btn {
+    background-color: #ff6600; /* Change to your preferred color */
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+}
+
+.splash .btn:hover {
+    background-color: #cc5500; /* Darker shade on hover */
+    color: white !important;
+}
+
+.feature__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    gap: 20px;
+  }
+  
+  @media (min-width: 1200px) {
+    .feature__wrapper {
+      grid-template-columns: repeat(6, 1fr); /* 6 items in one row on large screens */
+    }
+  }
+  

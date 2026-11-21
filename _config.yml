@@ -1,0 +1,222 @@
+# Public site: https://miftah.cloud (GitHub Pages)
+# Private documentation lives in a separate app: https://docs.miftah.cloud (Cloudflare Access login)
+#
+# This file is NOT reloaded automatically by `jekyll serve`; restart the server after editing.
+
+theme                    : minimal-mistakes-jekyll
+minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+
+# Site Settings
+locale                   : "en-US"
+title                    : "mymind"
+title_separator          : "-"
+subtitle                 : "By Miftah Ahmad Choiri"
+name                     : &name "Miftah Ahmad Choiri" # &name is a YAML anchor which can be *referenced later
+description              : &description "Miftah Ahmad Choiri is an IT Infrastructure Specialist with expertise in Linux system administration, virtualization, and automation. He has experience working with Red Hat, HP-UX, AIX, and AS/400 environments, along with OpenShift, Ansible, and shell scripting. Passionate about on-premises and cloud computing, Miftah is always eager to expand his knowledge and contribute to innovative IT solutions."
+url                      : https://miftah.cloud # the base hostname & protocol for your site
+baseurl                  : "" # empty because the site is served from the domain root
+repository               : "miftah-ahmad-choiri/miftah-ahmad-choiri.github.io"
+teaser                   : "/assets/logo/1.png"
+logo                     : "/assets/logo/1.png" # path of logo image to display in the masthead
+masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+words_per_minute         : 200
+enable_copy_code_button  : true
+comments:
+  provider               : "false"
+
+atom_feed:
+  path                   : # blank (default) uses feed.xml
+
+# Search runs in the browser (lunr) over the public pages only.
+search                   : true
+search_full_content      : true
+search_provider          : lunr
+
+
+# SEO Related
+# The old Google site verification token belonged to the previous site address.
+# Add a new token here after verifying https://miftah.cloud in Google Search Console.
+google_site_verification :
+bing_site_verification   :
+naver_site_verification  :
+yandex_site_verification :
+baidu_site_verification  :
+
+# Social Sharing
+twitter:
+  username               : &twitter "miftah"
+facebook:
+  username               : &facebook "miftah"
+  app_id                 :
+  publisher              :
+og_image                 : "/assets/logo/1.png" # Open Graph/Twitter default site image
+social:
+  type                   : # Person or Organization (defaults to Person)
+  name                   : # If the user or organization name differs from the site's name
+  links: # An array of links to social media profiles
+    - "https://twitter.com/miftah"
+    - "https://www.facebook.com/miftah"
+
+# Analytics
+# The old "UA-2011187-3" id is Universal Analytics, which no longer collects data.
+# To enable analytics, create a GA4 property and use: provider: "google-gtag" with google.tracking_id: "G-XXXXXXXXXX"
+analytics:
+  provider               : false
+
+
+# Site Author
+author:
+  name             : *name # *name is a YAML reference pointing to the &anchor earlier
+  avatar           : "/assets/profiles/myprofile3.png"
+  bio              : "Investing in **learning** is the most valuable **investment**—its returns last a lifetime and create endless **opportunities**.🚀"
+  location         : "Jakarta, ID"
+  links:
+    - label: "Resume/CV"
+      icon: "fas fa-fw fa-link"
+      url: "https://miftah.cloud/about/"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/miftah-ahmad-choiri-a8a953120/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/miftah-ahmad-choiri"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://www.instagram.com/miftah_ahmad_choiri/"
+
+
+# Site Footer
+footer:
+  links:
+    - label: "Resume/CV"
+      icon: "fas fa-fw fa-link"
+      url: "https://miftah.cloud/about/"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/miftah-ahmad-choiri-a8a953120/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/miftah-ahmad-choiri"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://www.instagram.com/miftah_ahmad_choiri/"
+
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-cache
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gemfile.lock
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - README.md
+  - tmp
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      classes: wide
+      author_profile: true
+
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+
+# Outputting
+permalink: /:categories/:title/
+timezone: Asia/Jakarta # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
+extra_css:
+  - "assets/css/print.css"
+
+
+# Archives (GitHub Pages compatible, Liquid based)
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+
+# HTML Compression
+compress_html:
+  clippings: all
+  ignore:
+    envs: development

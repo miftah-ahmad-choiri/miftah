@@ -1,0 +1,22 @@
+# Jekyll build output and caches
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Ruby / Bundler
+.bundle/
+vendor/
+
+# Large or copyrighted files never go into Git
+*.pdf
+!assets/images/aboutme/resume/Resume.pdf
+
+# OS and editor noise
+desktop.ini
+Thumbs.db
+.DS_Store
+*.swp
+
+# Local secrets
+.env
