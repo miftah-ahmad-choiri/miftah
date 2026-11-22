@@ -3,7 +3,7 @@ main:
   - title: "🏠Home"
     url: /
   - title: "📄MyDocs 🔒"
-    url: https://docs.miftah.cloud
+    url: https://docs.miftah.cloud/docs/
   - title: "🏆MyPorto"
     url: /blog/
   - title: "👤MySelf"
